@@ -91,9 +91,7 @@ class School {
     }
   
     set fullName(value : string) {
-        if ( value.includes ( " " ) ) {     //если полное имя состоит хотя бы с двух частей, которые можно отнести к имени и фамилии
-            [this.lastName, this.firstName] = value.split(" ");
-        }
+        [this.lastName, this.firstName] = value.split(" ");
     }
   
     get age() : number {
